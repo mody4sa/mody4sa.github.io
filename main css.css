@@ -1,0 +1,172 @@
+#lol{
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif,;
+    color: floralwhite;
+    text-shadow: 0 0 5px #999;
+	font-size: 40px;
+    
+	
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: serif 'Times New Roman', Times, serif;
+    }
+    .hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    padding-left: 4%;
+    padding-right: 4%;
+    box-sizing: border-box;
+    }
+    .logo{
+     width: 100px;
+     cursor: pointer;
+
+    }
+
+    .navbar{
+        
+        
+        height: 12%;
+        
+        display: flex;
+        align-items: center;
+        
+        }
+        
+
+        nav{
+    
+            flex: 1;
+            text-align: right;
+
+            }
+ nav ul li{
+ list-style: none;
+display: inline-block;
+margin-left: 60px;
+ }
+ nav
+ ul li a{
+ text-decoration: none;
+ color: #fff;
+ text-shadow: 0 0 5px #999;
+ font-size: 18px;
+ }
+
+ .bubbles img{
+    width: 50px;
+    animation: bubble 7s linear infinite;
+    }
+    .bubbles{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -70px;
+    }
+    @keyframes bubble{
+        0%{
+        transform: translateY(0);
+        opacity: 0;
+        }
+        50% {
+        opacity: 1;
+        }
+        70%{
+        opacity: 1;
+        }
+        100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+        }
+        }
+        .bubbles img:nth-child(1){
+            width: 15px;
+            animation-delay: 2s;
+            }
+            .bubbles img:nth-child(2){
+            animation-delay: 1s;
+            }
+            .bubbles img:nth-child(3){
+                width: 25px;
+            animation-delay: 3s;
+            }
+            .bubbles img:nth-child(4){
+            animation-delay: 4.5s;
+            }
+            .bubbles img:nth-child(5){
+            animation-delay: 3s;
+            }
+            .bubbles img:nth-child(6){
+                width: 20px;
+            animation-delay: 6s;
+            }
+            .bubbles img:nth-child(7){
+                width: 35px;
+            animation-delay: 7s;
+            }
+            .navbar ul li{
+                list-style: none;
+                display: inline-block;
+                margin: 0 20px;
+                position: relative
+                }
+
+                .navbar ul
+                li::after{
+                content: '';
+                height: 3px;
+                width: 0;
+                background: 		#00ced1;
+                position: absolute;
+                left: 0;
+                bottom: -5px;
+                transition: 0.5s;
+                }
+                .navbar ul
+li:hover::after{
+width: 100%; 
+}
+
+.content{
+    text-align: center;
+    }
+    .content h1{
+    font-size: 160px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.5s;
+    padding: 84px 420px;
+}
+.content
+h1:hover{
+-webkit-text-stroke: 2px #fff;
+color: transparent;
+}
+    
+    .content a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px; 
+    border: 2px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+    }
+    button{
+        color: #fbfcfd;
+        padding: 10px 25px;
+        background: transparent;
+        border: 1px solid #fff;
+        border-radius: 20px;
+        outline: none;
+        cursor: pointer;
+        }
